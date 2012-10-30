@@ -1,1 +1,1 @@
-My Solutions to 4clojure problems.
+My Solutions to http://www.4clojure.com/ problems.
