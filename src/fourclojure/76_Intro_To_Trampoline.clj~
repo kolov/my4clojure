@@ -1,1 +1,0 @@
-(defn sh[s] (-> s sort (apply str)))
