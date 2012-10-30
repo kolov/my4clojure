@@ -1,0 +1,1 @@
+(fn[f & args] (loop[r (apply f args)] (if (fn? r) (recur (r)) r )))
