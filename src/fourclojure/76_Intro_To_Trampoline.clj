@@ -1,1 +1,1 @@
-(defn ss[s] (->> s sort (apply str)))
+(range 1 12 2)
