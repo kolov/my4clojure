@@ -64,7 +64,7 @@ Write a function which takes a vector of keys and a vector of values and constru
 
 ;122
 #(loop [r 0 s %] (if (empty? s) r (recur (+ (- (int (first s)) (int \0 )) (* 2 r)) (next s))))
-;cgrand: reduce #(+ % % ({\0 0} %2 1)) 0
+
 
 ;88
 ; Write a function which returns the symmetric difference of two sets. The symmetric difference is the set of items belonging to one but not both of the two sets.
@@ -106,7 +106,7 @@ fn[coll]
     (map set)
     (filter #(>  (count %) 1))
     set )))
-cgrand: #(->> % (group-by sort) vals (filter next) (map set) set)
+
 
 137
 #(loop [ r () n %] (let [r1 (conj r (mod n %2)) n1 (quot n %2)] (if (> n1 0) (recur r1 n1) r1)))
